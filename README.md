@@ -18,6 +18,8 @@ pip install pymysql sqlalchemy fastapi uvicorn pydantic sqlite3
 npm i -D tailwindcss postcss qutoprefixer
 ```
 
+#### [있으면 인생이 달라짐](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss, "VSCode TailWind 확장기능")
+
 
 ### FastAPI 서버 시작
 ```bash
