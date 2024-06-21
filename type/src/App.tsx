@@ -1,29 +1,36 @@
-import axios from "axios";
-import { useState, FC, useEffect } from "react";
-
-interface Data {
-  data?: string
-}
-
-const App:FC = () => {
-  const [ data, setData ] = useState<Data | null>(null);
-
-  useEffect(() => {
-    axios.get(`http://localhost:8000/data`)
-    .then(res => {setData(res.data); console.log(res.data)})
-    .catch(e => console.error(e))
-
-    axios.post(`http://localhost:8000/send`, {name: "이주현", phone: 12})
-    .then(res => {console.log(res.data)})
-    .catch(e => console.error(e))
-  }, [])
-
+const App = () => {
   return (
-    <div className="flex justify-center w-2/3 flex-col h-screen items-center text-5xl">
-      <h1>받은 데이터</h1>
-      <p>{data?.data}</p>
-    </div>
-  );
+    <>
+      <header className="ui">
+        <div className="flex justify-between my-3">
+          <h1 className="text-4xl font-bold self-center">HaHoLuLa</h1>
+          <p className="self-center">로그인</p>
+        </div>
+      </header>
+
+      <main className="ui">
+        <div className="flex justify-end">
+          <button className="bg-blue-400 rounded-full px-2 py-1 text-white">글쓰기</button>
+        </div>
+
+        <div>
+          {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((item, index) => (
+            <div className="flex justify-between flex-wrap">
+              <span className="md:inline hidden">{index + 1}</span>
+              <span className="md:w-1/2 w-full">안녕하세요</span>
+              <span className="md:m-0 ml-auto">작성자</span>
+              <span>작성일</span>
+              <span>조회수</span>
+            </div>
+          ))}
+        </div>
+      </main>
+
+      <footer className="ui">
+        푸터
+      </footer>
+    </>
+  )
 }
 
 export default App
