@@ -36,3 +36,4 @@ npm install @types/react-router-dom
 ### 현재 설치된 프론트엔드 패키지
 - axios
 - react-router-dom
+- tailwindcss
