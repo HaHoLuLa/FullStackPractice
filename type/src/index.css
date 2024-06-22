@@ -21,20 +21,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-.ui {
-  @apply md:w-2/3 w-11/12 mx-auto
-}
-
-/* 1 */
-* {
-  @apply
-  selection:text-white
-  selection:bg-blue-400
-}
-
-/* 2 */
-/* *::selection {
-  color: white;
-  background-color: cornflowerblue;
-} */
