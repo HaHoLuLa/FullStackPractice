@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <BR>
+  <BR basename={process.env.PUBLIC_URL}>
     <React.StrictMode>
       <App />
     </React.StrictMode>
