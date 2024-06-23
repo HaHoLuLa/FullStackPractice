@@ -4,7 +4,7 @@ import Data from "./pages/Data"
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Data />} />
+      <Route index element={<Data />} />
     </Routes>
   )
 }
