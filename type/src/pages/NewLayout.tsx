@@ -19,12 +19,12 @@ const NewLayout = () => {
         <div className="md:w-[75%] border border-white rounded-[10px] p-[10px]">
           메인
         </div>
-        <div className="md:w-[25%] border-[1px] rounded-[10px] border-white sticky h-auto top-0 p-[10px] md:ml-[10px]">
+        <div className="md:w-[25%] border-[1px] rounded-[10px] border-white md:sticky h-auto md:top-0 p-[10px] md:ml-[10px] md:mt-0 mt-[20px]">
           사이드 메뉴임다
         </div>
       </main>
 
-      <footer className="ui border rounded-[10px] border-white p-[10px]">
+      <footer className="ui border rounded-[10px] border-white p-[10px] md:mt-0 mt-[20px]">
         푸터
       </footer>
     </div>
