@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/FullStackPractice/static/css/main.f16c22ff.css",
-    "main.js": "/FullStackPractice/static/js/main.f4a22bd1.js",
+    "main.css": "/FullStackPractice/static/css/main.c611741c.css",
+    "main.js": "/FullStackPractice/static/js/main.265777a3.js",
     "static/js/453.7cfdfad5.chunk.js": "/FullStackPractice/static/js/453.7cfdfad5.chunk.js",
     "index.html": "/FullStackPractice/index.html",
-    "main.f16c22ff.css.map": "/FullStackPractice/static/css/main.f16c22ff.css.map",
-    "main.f4a22bd1.js.map": "/FullStackPractice/static/js/main.f4a22bd1.js.map",
+    "main.c611741c.css.map": "/FullStackPractice/static/css/main.c611741c.css.map",
+    "main.265777a3.js.map": "/FullStackPractice/static/js/main.265777a3.js.map",
     "453.7cfdfad5.chunk.js.map": "/FullStackPractice/static/js/453.7cfdfad5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f16c22ff.css",
-    "static/js/main.f4a22bd1.js"
+    "static/css/main.c611741c.css",
+    "static/js/main.265777a3.js"
   ]
 }
