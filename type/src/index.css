@@ -4,15 +4,39 @@
 @tailwind utilities;
 @import url("https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.1/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css");
 
+::selection {
+  @apply bg-white text-black
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  /* 스크롤바의 너비 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  /* 스크롤바의 색상 */
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  /* background: rgba(49, 51, 56, 0.3); */
+  background: none;
+  /*스크롤바 뒷 배경 색상*/
+}
+
 * {
   font-family: "Wanted Sans Variable";
+  /* cursor: none; */
+  cursor: context-menu;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -20,4 +44,38 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.cursor {
+  z-index: 99999;
+  @apply w-10 h-10 border border-solid border-black rounded-full absolute transform -translate-x-1/2 -translate-y-1/2 pointer-events-none transition-transform duration-100 ease-linear origin-bottom-right backdrop-sepia-[20%] bg-cover md:block hidden
+}
+
+.hover {
+  @apply scale-150 bg-black
+}
+
+.hover::after {
+  @apply content-['View'] text-white text-sm absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+}
+
+/* .container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(65, 65, 65);
+}
+
+.pointer {
+  position: absolute;
+  background-color: rgb(108, 12, 31);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  left: -15px;
+  top: -15px;
+} */
+
+
+.ui {
+  @apply md:w-[70%] mx-auto w-[90%]
 }
