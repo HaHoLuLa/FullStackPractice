@@ -5,7 +5,7 @@ const NewLayout = () => {
         <div className="flex justify-between my-[18px]">
           <div className="flex">
             <h1 className="text-4xl font-bold">HaHoLuLa</h1>
-            <div className="ml-[20px] flex justify-between w-auto items-center">
+            <div className="ml-[20px] md:flex hidden justify-between w-auto items-center">
               <span>메뉴</span>
               <span>메뉴</span>
               <span>메뉴</span>
