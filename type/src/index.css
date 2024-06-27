@@ -2,11 +2,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.1/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css");
-
-::selection {
-  @apply bg-white text-black
+/* @import url("https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.1/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css"); */
+@font-face {
+  font-family: 'HSSanTokki20-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405@1.0/HSSanTokki20-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
+
+/* @font-face {
+  font-family: 'MangoDdobak-B';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoDdobak-B.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+} */
+
+
+/* @font-face {
+  font-family: 'Cafe24Ssurround';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+/* @font-face {
+  font-family: 'DungGeunMo';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+/* @font-face {
+  font-family: 'Uiyeun';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105@1.1/Uiyeun.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+/* ::selection {
+  color: white;
+  background-color: red;
+} */
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -15,19 +51,25 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: white;
+  background: gold;
+  
   /* 스크롤바의 색상 */
   border-radius: 20px;
 }
 
 ::-webkit-scrollbar-track {
   /* background: rgba(49, 51, 56, 0.3); */
-  background: none;
+  background: transparent;
   /*스크롤바 뒷 배경 색상*/
 }
 
 * {
-  font-family: "Wanted Sans Variable";
+  /* font-family: "Wanted Sans Variable"; */
+  font-family: 'HSSanTokki20-Regular';
+  /* font-family: 'MangoDdobak-B'; */
+  /* font-family: 'Cafe24Ssurround'; */
+  /* font-family: 'DungGeunMo'; */
+  /* font-family: 'Uiyeun'; */
   /* cursor: none; */
   cursor: context-menu;
 }
@@ -74,8 +116,3 @@ code {
   left: -15px;
   top: -15px;
 } */
-
-
-.ui {
-  @apply md:w-[70%] mx-auto w-[95%]
-}

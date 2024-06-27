@@ -1,13 +1,13 @@
 import { useEffect, FC, ReactNode } from "react";
 
 interface Props {
-  children: ReactNode
+  children: ReactNode;
 }
 
-const Mouse: FC<Props> = ({children}) => {
+const Mouse: FC<Props> = ({ children }) => {
   useEffect(() => {
-    const mouseCursor = document.getElementById('mouse');
-    const hoverTargets = document.querySelectorAll('.hover-target');
+    const mouseCursor = document.getElementById("mouse");
+    const hoverTargets = document.querySelectorAll(".hover-target");
 
     if (!mouseCursor) return;
 
@@ -26,7 +26,7 @@ const Mouse: FC<Props> = ({children}) => {
     };
 
     const handleScroll = () => {
-      const mouseEvent = new MouseEvent('mousemove', {
+      const mouseEvent = new MouseEvent("mousemove", {
         view: window,
         bubbles: true,
         cancelable: true,
@@ -35,19 +35,19 @@ const Mouse: FC<Props> = ({children}) => {
     };
 
     const handleMouseEnter = () => {
-      mouseCursor.classList.add("hover")
+      mouseCursor.classList.add("hover");
     };
 
     const handleMouseLeave = () => {
-      mouseCursor.classList.remove("hover")
+      mouseCursor.classList.remove("hover");
     };
 
     window.addEventListener("mousemove", handleMouseMove);
     window.addEventListener("scroll", handleScroll);
 
     hoverTargets.forEach((item) => {
-      item.addEventListener('mouseenter', handleMouseEnter);
-      item.addEventListener('mouseleave', handleMouseLeave);
+      item.addEventListener("mouseenter", handleMouseEnter);
+      item.addEventListener("mouseleave", handleMouseLeave);
     });
 
     return () => {
@@ -55,8 +55,8 @@ const Mouse: FC<Props> = ({children}) => {
       window.removeEventListener("mousemove", handleMouseMove);
       window.removeEventListener("scroll", handleScroll);
       hoverTargets.forEach((item) => {
-        item.removeEventListener('mouseenter', handleMouseEnter);
-        item.removeEventListener('mouseleave', handleMouseLeave);
+        item.removeEventListener("mouseenter", handleMouseEnter);
+        item.removeEventListener("mouseleave", handleMouseLeave);
       });
     };
   }, []);
